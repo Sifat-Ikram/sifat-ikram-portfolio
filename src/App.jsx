@@ -18,14 +18,20 @@ import { FaLinkedin } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
 import Drawer from 'react-modern-drawer'
 import 'react-modern-drawer/dist/index.css'
-import React from "react";
-
+import React, { useEffect } from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   const [isOpen, setIsOpen] = React.useState(false)
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState)
   }
+
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <div className='flex justify-between'>
       <div className='fixed w-4/12 min-h-screen pb-5 md:w-1/4 lg:py-16 md:py-10 lg:px-10 md:px-5 bg-sky-700'>
@@ -56,12 +62,24 @@ function App() {
       </div>
       <div className="w-3/5 py-20 mx-auto space-y-24 md:px-8 lg:px-20">
         <Element className="ml-3 md:ml-12 lg:ml-20" name="introduction"><Introduction></Introduction></Element>
-        <Element className="ml-3 md:ml-12 lg:ml-20" name="about"><About></About></Element>
-        <Element className="ml-3 md:ml-12 lg:ml-20" name="skills"><Skills></Skills></Element>
-        <Element className="ml-3 md:ml-12 lg:ml-20" name="services"><Services></Services></Element>
-        <Element className="ml-3 md:ml-12 lg:ml-20" name="portfolio"><Portfolio></Portfolio></Element>
-        <Element className="ml-3 md:ml-12 lg:ml-20" name="education"><Education></Education></Element>
-        <Element className="ml-3 md:ml-12 lg:ml-20" name="contact"><Contact></Contact></Element>
+        <div data-aos="fade-up">
+          <Element className="ml-3 md:ml-12 lg:ml-20" name="about"><About></About></Element>
+        </div>
+        <div data-aos="fade-up">
+          <Element className="ml-3 md:ml-12 lg:ml-20" name="skills"><Skills></Skills></Element>
+        </div>
+        <div data-aos="fade-up">
+          <Element className="ml-3 md:ml-12 lg:ml-20" name="services"><Services></Services></Element>
+        </div>
+        <div data-aos="fade-up">
+          <Element className="ml-3 md:ml-12 lg:ml-20" name="portfolio"><Portfolio></Portfolio></Element>
+        </div>
+        <div data-aos="fade-up">
+          <Element className="ml-3 md:ml-12 lg:ml-20" name="education"><Education></Education></Element>
+        </div>
+        <div data-aos="fade-up">
+          <Element className="ml-3 md:ml-12 lg:ml-20" name="contact"><Contact></Contact></Element>
+        </div>
       </div>
       <div className="fixed">
         <button onClick={toggleDrawer} className="fixed mt-40 text-gray-900 bg-gray-200 right-5 btn"><GiHamburgerMenu></GiHamburgerMenu></button>
