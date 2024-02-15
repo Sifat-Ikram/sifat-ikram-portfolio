@@ -8,7 +8,7 @@ const Introduction = () => {
                 <h1 className='font-medium uppercase'>Introduction</h1>
             </button>
             <div>
-                <h1><span className='mb-5 text-sm font-semibold md:text-2xl lg:text-5xl'>Say Hello from
+                <h1><span className='mb-5 font-semibold text-3xl'>Say Hello from
                     <span className='font-bold'> Md. Sifat Ikram, </span>
                     MERN Stack developer</span></h1>
             </div>
