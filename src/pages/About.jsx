@@ -15,13 +15,13 @@ const About = () => {
     }
 
     return (
-        <div className="ml-10">
+        <div>
             <button className='flex items-center gap-2 px-4 py-2 mb-10 border-2 border-solid rounded-full cursor-pointer hover:text-white hover:bg-sky-700'>
                 <IoPerson />
                 <h1 className='font-medium uppercase'>About Me</h1>
             </button>
             <div>
-                <h1 className='mb-8 font-semibold text-3xl'>
+                <h1 className='mb-8 text-3xl font-semibold'>
                     Every great design begin with an even better story
                 </h1>
                 <h2  className='mb-5 text-2xl'>

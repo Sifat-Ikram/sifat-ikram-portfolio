@@ -13,7 +13,7 @@ const Skills = () => {
         Aos.init({ duration: 2500 });
     }, []);
     return (
-        <div className="ml-10">
+        <div>
             <button className='flex items-center gap-2 px-4 py-2 mb-10 border-2 border-solid rounded-full cursor-pointer hover:text-white hover:bg-sky-700'>
                 <FaTools />
                 <h1 className='font-medium uppercase'>My Skills</h1>
@@ -39,7 +39,7 @@ const Skills = () => {
                         <h1 className='text-3xl font-semibold'>Tailwind CSS</h1>
                     </div>
                 </div>
-                <div data-aos="fade-left">
+                <div data-aos="fade-up">
                     <div className='flex flex-col items-center'>
                         <div className='p-10 border-2 border-solid rounded-full cursor-pointer hover:border-sky-700'>
                             <div className='text-3xl font-bold'>
@@ -49,7 +49,7 @@ const Skills = () => {
                         <h1 className='text-3xl font-semibold'>React Js</h1>
                     </div>
                 </div>
-                <div data-aos="fade-right">
+                <div data-aos="fade-up">
                     <div className='flex flex-col items-center'>
                         <div className='p-10 border-2 border-solid rounded-full cursor-pointer hover:border-sky-700'>
                             <div className='text-3xl font-bold'>
@@ -67,7 +67,7 @@ const Skills = () => {
                     </div>
                     <h1 className='text-3xl font-semibold'>Node Js</h1>
                 </div>
-                <div data-aos="fade-left">
+                <div data-aos="fade-up">
                     <div className='flex flex-col items-center'>
                         <div className='p-10 border-2 border-solid rounded-full cursor-pointer hover:border-sky-700'>
                             <div className='text-3xl font-bold'>
@@ -77,7 +77,7 @@ const Skills = () => {
                         <h1 className='text-3xl font-semibold'>Express Js</h1>
                     </div>
                 </div>
-                <div data-aos="fade-right">
+                <div data-aos="fade-up">
                     <div className='flex flex-col items-center'>
                         <div className='p-10 border-2 border-solid rounded-full cursor-pointer hover:border-sky-700'>
                             <div className='text-3xl font-bold'>

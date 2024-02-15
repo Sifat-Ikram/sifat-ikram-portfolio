@@ -33,22 +33,22 @@ function App() {
   }, []);
 
   return (
-    <div className='flex justify-between'>
-      <div className='fixed w-4/12 min-h-screen pb-5 md:w-1/4 lg:py-16 md:py-10 lg:px-10 md:px-5 bg-sky-700'>
+    <div className='md:flex'>
+      <div className='md:fixed md:w-1/4 lg:py-16 md:py-8 lg:px-10 md:px-2 bg-sky-700'>
         <div className="flex flex-col items-center mb-5">
-          <h1 className='block mb-3 text-xs font-normal text-center text-white uppercase lg:font-bold md:font-semibold md:text-lg lg:text-3xl'
-          >Md. Sifat Ikram</h1>
-          <h1 className="mb-10 text-xs font-semibold text-center text-white md:text-base lg:text-xl">Web Developer</h1>
+          <h1 className='block mb-3 text-3xl font-semibold text-center text-white uppercase lg:font-bold'
+          >MD. SIFAT IKRAM</h1>
+          <h1 className="mb-10 text-xl font-semibold text-center text-white">Web Developer</h1>
           <img src={photo} className="w-4/5 rounded-xl" alt="" />
         </div>
-        <div className="p-2 space-y-4 text-white">
-          <h1 className="text-xs font-semibold lg:text-xl md:text-sm">Contact Info:</h1>
-          <p className="text-xs lg:text-xl md:text-sm">Address: <span className="text-xs lg:text-lg md:text-sm">Dhaka, Bangladesh</span></p>
-          <p className="text-xs lg:text-xl md:text-sm">Email: <span className="lg:text-lg md:text-xs">sifatikram@gmail.com</span></p>
-          <p className="text-xs lg:text-xl md:text-sm">Phone: <span className="text-xs lg:text-lg md:text-sm">+8801718837796</span></p>
-          <p className="text-xs lg:text-xl md:text-sm">Contact links:</p>
+        <div className="py-2 mx-auto text-white max-md:space-y-4 md:space-y-3 lg:space-y-4 max-md:w-4/5">
+          <h1 className="text-xl font-semibold ">Contact Info:</h1>
+          <p className="text-xl">Address: <span className="text-lg">Dhaka, Bangladesh</span></p>
+          <p className="text-xl">Email:<span className="text-lg">sifatikram@gmail.com</span></p>
+          <p className="text-xl">Phone: <span className="text-lg">+8801718837796</span></p>
+          <p className="text-xl">Contact links:</p>
           <div className="flex items-center justify-between w-3/5 gap-2 pb-10 md:justify-evenly">
-            <a className="text-xl" href="https://www.facebook.com/sifat.ikram">
+            <a className="text-2xl" href="https://www.facebook.com/sifat.ikram">
               <ImFacebook2 />
             </a>
             <a className="text-2xl" href="https://www.linkedin.com/in/sifat-ikram-17011713a/">
@@ -60,90 +60,92 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="w-3/5 py-20 mx-auto space-y-24 md:px-8 lg:px-20">
-        <Element className="ml-3 md:ml-12 lg:ml-20" name="introduction"><Introduction></Introduction></Element>
-        <div data-aos="fade-up">
-          <Element className="ml-3 md:ml-12 lg:ml-20" name="about"><About></About></Element>
+      <div className="flex-1 md:flex md:ml-72 lg:ml-96">
+        <div className="w-11/12 py-20 mx-auto space-y-24 lg:ml-10">
+          <Element name="introduction"><Introduction></Introduction></Element>
+          <div data-aos="fade-up">
+            <Element name="about"><About></About></Element>
+          </div>
+          <div data-aos="fade-up">
+            <Element name="skills"><Skills></Skills></Element>
+          </div>
+          <div data-aos="fade-up">
+            <Element name="services"><Services></Services></Element>
+          </div>
+          <div data-aos="fade-up">
+            <Element name="portfolio"><Portfolio></Portfolio></Element>
+          </div>
+          <div data-aos="fade-up">
+            <Element name="education"><Education></Education></Element>
+          </div>
+          <div data-aos="fade-up">
+            <Element name="contact"><Contact></Contact></Element>
+          </div>
         </div>
-        <div data-aos="fade-up">
-          <Element className="ml-3 md:ml-12 lg:ml-20" name="skills"><Skills></Skills></Element>
+        <div className="fixed right-5">
+          <button onClick={toggleDrawer} className="mt-40 text-gray-900 bg-gray-200 btn"><GiHamburgerMenu></GiHamburgerMenu></button>
+          <Drawer
+            open={isOpen}
+            onClose={toggleDrawer}
+            direction='right'
+            style={{
+              width: '80px',
+              backgroundColor: "white"
+            }}
+          >
+            <ul className="w-4/5 mx-auto mt-10 space-y-5">
+              <Link to="introduction" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#0830A5] tooltip-bottom btn  btn-outline rounded-full'
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500} data-tip="Introduction">
+                <IoIosHome />
+              </Link>
+              <Link to="about" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#0830A5] tooltip-bottom btn  btn-outline rounded-full'
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500} data-tip="About">
+                <IoPerson />
+              </Link>
+              <Link to="skills" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#0830A5] tooltip-bottom btn  btn-outline rounded-full'
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500} data-tip="Skills">
+                <FaTools />
+              </Link>
+              <Link to="services" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#0830A5] tooltip-bottom btn  btn-outline rounded-full'
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500} data-tip="Services">
+                <MdMiscellaneousServices />
+              </Link>
+              <Link to="portfolio" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#0830A5] tooltip-bottom btn  btn-outline rounded-full'
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500} data-tip="Portfolio">
+                <FaFolderOpen />
+              </Link>
+              <Link to={"education"} className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#0830A5] tooltip-bottom btn  btn-outline rounded-full'
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500} data-tip="Education">
+                <IoBook />
+              </Link>
+              <Link to="contact" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#0830A5] tooltip-bottom btn  btn-outline rounded-full'
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500} data-tip="contact">
+                <IoMailOpenSharp />
+              </Link>
+            </ul>
+          </Drawer>
         </div>
-        <div data-aos="fade-up">
-          <Element className="ml-3 md:ml-12 lg:ml-20" name="services"><Services></Services></Element>
-        </div>
-        <div data-aos="fade-up">
-          <Element className="ml-3 md:ml-12 lg:ml-20" name="portfolio"><Portfolio></Portfolio></Element>
-        </div>
-        <div data-aos="fade-up">
-          <Element className="ml-3 md:ml-12 lg:ml-20" name="education"><Education></Education></Element>
-        </div>
-        <div data-aos="fade-up">
-          <Element className="ml-3 md:ml-12 lg:ml-20" name="contact"><Contact></Contact></Element>
-        </div>
-      </div>
-      <div className="fixed">
-        <button onClick={toggleDrawer} className="fixed mt-40 text-gray-900 bg-gray-200 right-5 btn"><GiHamburgerMenu></GiHamburgerMenu></button>
-        <Drawer
-          open={isOpen}
-          onClose={toggleDrawer}
-          direction='right'
-          style={{
-            width: '80px',
-            backgroundColor: "white"
-          }}
-        >
-          <ul className="w-4/5 mx-auto mt-10 space-y-5">
-            <Link to="introduction" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#0830A5] tooltip-bottom btn  btn-outline rounded-full'
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500} data-tip="Introduction">
-              <IoIosHome />
-            </Link>
-            <Link to="about" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#0830A5] tooltip-bottom btn  btn-outline rounded-full'
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500} data-tip="About">
-              <IoPerson />
-            </Link>
-            <Link to="skills" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#0830A5] tooltip-bottom btn  btn-outline rounded-full'
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500} data-tip="Skills">
-              <FaTools />
-            </Link>
-            <Link to="services" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#0830A5] tooltip-bottom btn  btn-outline rounded-full'
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500} data-tip="Services">
-              <MdMiscellaneousServices />
-            </Link>
-            <Link to="portfolio" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#0830A5] tooltip-bottom btn  btn-outline rounded-full'
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500} data-tip="Portfolio">
-              <FaFolderOpen />
-            </Link>
-            <Link to={"education"} className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#0830A5] tooltip-bottom btn  btn-outline rounded-full'
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500} data-tip="Education">
-              <IoBook />
-            </Link>
-            <Link to="contact" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#0830A5] tooltip-bottom btn  btn-outline rounded-full'
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500} data-tip="contact">
-              <IoMailOpenSharp />
-            </Link>
-          </ul>
-        </Drawer>
       </div>
     </div>
   )

@@ -25,16 +25,16 @@ const Contact = () => {
     };
 
     return (
-        <div className="ml-10">
+        <div>
             <button className='flex items-center gap-2 px-4 py-2 mb-10 border-2 border-solid rounded-full cursor-pointer hover:text-white hover:bg-sky-700'>
                 <IoMailOpenSharp />
                 <h1 className='font-medium uppercase'>Contact</h1>
             </button>
             <div>
                 <h1 className='mb-10 text-4xl font-bold'>Contact Me</h1>
-                <form className="" ref={form} onSubmit={sendEmail} >
+                <form ref={form} onSubmit={sendEmail} >
                     <div className='items-center gap-20 lg:flex'>
-                        <div data-aos="fade-right">
+                        <div data-aos="fade-up">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Your full Name</span>
@@ -42,7 +42,7 @@ const Contact = () => {
                                 <input type="text" name='name' placeholder="Full Name" className="w-full input input-bordered" required />
                             </div>
                         </div>
-                        <div data-aos="fade-left">
+                        <div data-aos="fade-up">
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Email</span>

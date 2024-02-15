@@ -10,7 +10,7 @@ const Education = () => {
     }, []);
 
     return (
-        <div className="ml-10">
+        <div>
             <button className='flex items-center gap-2 px-4 py-2 mb-10 border-2 border-solid rounded-full cursor-pointer hover:text-white hover:bg-sky-700'>
                 <IoBook />
                 <h1 className='font-medium uppercase'>Education</h1>
