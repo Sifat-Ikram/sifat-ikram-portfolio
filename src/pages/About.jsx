@@ -3,7 +3,7 @@ import { FaCloudDownloadAlt } from "react-icons/fa";
 
 
 const About = () => {
-    const resumePdfPath = 'https://drive.google.com/file/d/1su_Dq6eVFMy6jIzyTvIQbe3l1wt2vMV_/view?usp=sharing';
+    const resumePdfPath = 'https://drive.google.com/file/d/1BL7VK7WJOsE12clRnYslQW3kVC3payH2/view?usp=sharing';
 
     const handleDownloadClick = () => {
         const downloadLink = document.createElement('a');
