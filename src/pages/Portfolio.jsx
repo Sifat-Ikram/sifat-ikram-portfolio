@@ -22,6 +22,10 @@ const Portfolio = () => {
                         <h1 className='text-2xl font-semibold text-center text-sky-700'>Travel Beyond</h1>
                         <p>This is travel website.. Here an user can book or delete a tour package. An admin can add, update and delete a tour package and delete and update user.</p>
                     </a>
+                    <a data-aos="fade-up" className="py-5 space-y-5 border-2 border-solid rounded-md hover:border-sky-700 md:p-5 lg:p-7 bg-base-200" href='https://swiftscan-diagnostics.web.app'>
+                        <h1 className='text-2xl font-semibold text-center text-sky-700'>Swiftscan Diagnostics</h1>
+                        <p>This is medical diagnostic website. Here an user can book or delete a test. An admin can add, update and delete a test. Admin can also delete an user.</p>
+                    </a>
                     <a data-aos="fade-down" className="py-5 space-y-5 border-2 border-solid rounded-md hover:border-sky-700 md:p-5 lg:p-7 bg-base-200" href='https://job-hustle.web.app/'>
                         <h1 className='text-2xl font-semibold text-center text-sky-700'>JobHustle</h1>
                         <p>This is a job hunting website. Anyone can sign in and apply for a job</p>
