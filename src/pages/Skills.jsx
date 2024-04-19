@@ -13,14 +13,14 @@ const Skills = () => {
   }, []);
   return (
     <div>
-      <button className="flex items-center gap-2 px-4 py-2 mb-10 border-2 border-solid rounded-full cursor-pointer hover:text-white hover:bg-sky-700">
+      <button className="flex items-center gap-2 px-4 py-2 mb-10 border-2 border-solid rounded-full cursor-pointer hover:text-white hover:bg-[#121A90]">
         <FaTools />
         <h1 className="font-medium uppercase">My Skills</h1>
       </button>
       <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4">
         <div data-aos="fade-right">
           <div className="flex flex-col items-center">
-            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-sky-700">
+            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#121A90]">
               <div className="text-3xl font-bold">
                 <TbBrandJavascript />
               </div>
@@ -30,7 +30,7 @@ const Skills = () => {
         </div>
         <div data-aos="fade-down">
           <div className="flex flex-col items-center">
-            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-sky-700">
+            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#121A90]">
               <div className="text-3xl font-bold">
                 <TbBrandTailwind />
               </div>
@@ -40,7 +40,7 @@ const Skills = () => {
         </div>
         <div data-aos="fade-up">
           <div className="flex flex-col items-center">
-            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-sky-700">
+            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#121A90]">
               <div className="text-3xl font-bold">
                 <RiReactjsLine />
               </div>
@@ -50,7 +50,7 @@ const Skills = () => {
         </div>
         <div data-aos="fade-down">
           <div className="flex flex-col items-center">
-            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-sky-700">
+            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#121A90]">
               <div className="text-3xl font-bold">
                 <SiVuedotjs />
               </div>
@@ -60,7 +60,7 @@ const Skills = () => {
         </div>
         <div data-aos="fade-up">
           <div className="flex flex-col items-center">
-            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-sky-700">
+            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#121A90]">
               <div className="text-3xl font-bold">
                 <IoLogoNodejs />
               </div>
@@ -70,7 +70,7 @@ const Skills = () => {
         </div>
         <div data-aos="fade-down">
           <div className="flex flex-col items-center">
-            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-sky-700">
+            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#121A90]">
               <div className="text-3xl font-bold">
                 <SiExpress />
               </div>
@@ -80,7 +80,7 @@ const Skills = () => {
         </div>
         <div data-aos="fade-up">
           <div className="flex flex-col items-center">
-            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-sky-700">
+            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#121A90]">
               <div className="text-3xl font-bold">
                 <SiMongodb />
               </div>
@@ -90,7 +90,7 @@ const Skills = () => {
         </div>
         <div data-aos="fade-down">
           <div className="flex flex-col items-center">
-            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-sky-700">
+            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#121A90]">
               <div className="text-3xl font-bold">
                 <TbBrandNextjs />
               </div>
@@ -100,7 +100,7 @@ const Skills = () => {
         </div>
         <div data-aos="fade-up">
           <div className="flex flex-col items-center">
-            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-sky-700">
+            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#121A90]">
               <div className="text-3xl font-bold">
                 <SiFirebase />
               </div>
@@ -110,7 +110,7 @@ const Skills = () => {
         </div>
         <div data-aos="fade-down">
           <div className="flex flex-col items-center">
-            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-sky-700">
+            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#121A90]">
               <div className="text-3xl font-bold">
                 <SiCodeclimate />
               </div>

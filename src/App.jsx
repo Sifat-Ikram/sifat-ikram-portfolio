@@ -34,11 +34,11 @@ function App() {
 
   return (
     <div className='md:flex'>
-      <div className='md:fixed md:w-1/4 lg:py-16 md:py-8 lg:px-10 md:px-2 bg-sky-700'>
+      <div className='md:fixed md:w-1/4 lg:py-16 md:py-8 lg:px-10 md:px-2 bg-[#121A90]'>
         <div className="flex flex-col items-center mb-5">
           <h1 className='block mb-3 text-3xl font-semibold text-center text-white uppercase lg:font-bold'
           >MD. SIFAT IKRAM</h1>
-          <h1 className="mb-10 text-xl font-semibold text-center text-white">Web Developer</h1>
+          <h1 className="mb-10 text-xl font-semibold text-center text-white">MERN Stack Developer</h1>
           <img src={photo} className="w-4/5 rounded-xl" alt="" />
         </div>
         <div className="py-2 mx-auto text-white max-md:space-y-4 md:space-y-3 lg:space-y-4 max-md:w-4/5">
@@ -48,13 +48,13 @@ function App() {
           <p className="text-xl">Phone: <span className="text-lg">+8801718837796</span></p>
           <p className="text-xl">Contact links:</p>
           <div className="flex items-center justify-between w-3/5 gap-2 pb-10 md:justify-evenly">
-            <a className="text-2xl" href="https://www.facebook.com/sifat.ikram">
+            <a className="text-2xl hover:text-gray-300" href="https://www.facebook.com/sifat.ikram">
               <ImFacebook2 />
             </a>
-            <a className="text-2xl" href="https://www.linkedin.com/in/sifat-ikram-17011713a/">
+            <a className="text-2xl hover:text-gray-300" href="https://www.linkedin.com/in/sifat-ikram-17011713a/">
               <FaLinkedin />
             </a>
-            <a className="text-2xl" href="https://github.com/Sifat-Ikram">
+            <a className="text-2xl hover:text-gray-300" href="https://github.com/Sifat-Ikram">
               <BsGithub />
             </a>
           </div>
@@ -73,7 +73,7 @@ function App() {
             <Element name="services"><Services></Services></Element>
           </div>
           <div data-aos="fade-up">
-            <Element name="portfolio"><Portfolio></Portfolio></Element>
+            <Element name="projects"><Portfolio></Portfolio></Element>
           </div>
           <div data-aos="fade-up">
             <Element name="education"><Education></Education></Element>
@@ -122,11 +122,11 @@ function App() {
                 duration={500} data-tip="Services">
                 <MdMiscellaneousServices />
               </Link>
-              <Link to="portfolio" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#0830A5] tooltip-bottom btn  btn-outline rounded-full'
+              <Link to="projects" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#0830A5] tooltip-bottom btn  btn-outline rounded-full'
                 spy={true}
                 smooth={true}
                 offset={50}
-                duration={500} data-tip="Portfolio">
+                duration={500} data-tip="Projects">
                 <FaFolderOpen />
               </Link>
               <Link to={"education"} className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#0830A5] tooltip-bottom btn  btn-outline rounded-full'
@@ -151,4 +151,4 @@ function App() {
   )
 }
 
-export default App
+export default App;

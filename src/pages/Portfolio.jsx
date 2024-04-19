@@ -4,72 +4,89 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const Portfolio = () => {
+
   useEffect(() => {
     Aos.init({ duration: 2500 });
   }, []);
 
+  const projects = [
+    {
+      title: "Career Hub",
+      image: "https://i.ibb.co/gz640Mc/career.png",
+      description:
+        "This is a job hunting website. Anyone can sign in and apply for a job or internship. There are three routes: Admin routes, Employer routes, Employee routes.",
+      link: "https://career-hub-web.web.app/",
+      githubClient: "https://github.com/Sifat-Ikram/career-hub-client",
+      githubServer: "https://github.com/Sifat-Ikram/career-hub-server",
+    },
+    {
+      title: "Taste Trail",
+      image: "https://i.ibb.co/sKjTfQ1/taste.png",
+      description:
+        "This is a restaurant website. Here a user can order a food item. Users can place an order for the ordered food item or can delete a food item from the cart in the shop page. An admin can add, update, and delete a food item and user.",
+      link: "https://taste-trail-web.web.app/",
+      githubClient: "https://github.com/Sifat-Ikram/taste-trail-client",
+      githubServer: "https://github.com/Sifat-Ikram/taste-trail-server",
+    },
+    {
+      title: "Travel Beyond",
+      image: "https://i.ibb.co/HDL7dFC/travel.png",
+      description:
+        "This is a travel website. Here a user can book or delete a tour package. An admin can add, update, and delete a tour package and delete and update a user.",
+      link: "https://travel-beyond-web.web.app/",
+      githubClient: "https://github.com/Sifat-Ikram/travel-beyond-client",
+      githubServer: "https://github.com/Sifat-Ikram/travel-beyond-server",
+    },
+    {
+      title: "Swiftscan Diagnostics",
+      image: "https://i.ibb.co/gdZc0VG/swift.png",
+      description:
+        "This is a medical diagnostic website. Here a user can book or delete a test. An admin can add, update, and delete a test. Admin can also delete a user.",
+      link: "https://swiftscan-diagnostics.web.app",
+      githubClient:
+        "https://github.com/Sifat-Ikram/swiftscan-diagnostics-client",
+      githubServer:
+        "https://github.com/Sifat-Ikram/swiftscan-diagnostics-server",
+    },
+  ];
+
   return (
-    <div>
-      <button className="flex items-center gap-2 px-4 py-2 mb-10 border-2 border-solid rounded-full cursor-pointer hover:text-white hover:bg-sky-700">
+    <div className="container mx-auto px-4">
+      <button className="flex items-center gap-2 px-4 py-2 mb-10 border-2 border-solid rounded-full cursor-pointer hover:text-white hover:bg-[#121A90]">
         <FaFolderOpen />
-        <h1 className="font-medium uppercase">Portfolio</h1>
+        <h1 className="font-medium uppercase">Projects</h1>
       </button>
       <div>
-        <h1 className="text-4xl font-bold">Featured Projects</h1>
-        <div className="grid grid-cols-1 gap-3 mt-10 lg:grid-cols-2">
-          <a
-            className="py-5 space-y-5 border-2 border-solid rounded-md hover:border-sky-700 md:p-5 lg:p-7 bg-base-200 transition duration-300 transform hover:scale-105"
-            href="https://career-hub-web.web.app/"
-          >
-            <h1 className="text-2xl font-semibold text-center text-sky-700">
-              Career Hub
-            </h1>
-            <p>
-              This is a job hunting website. Anyone can sign in and apply for a
-              job or internship. There is three routes: Admin routes, Employer
-              routes, Employee routes.
-            </p>
-          </a>
-          <a
-            className="py-5 space-y-5 border-2 border-solid rounded-md hover:border-sky-700 md:p-5 lg:p-7 bg-base-200 transition duration-300 transform hover:scale-105"
-            href="https://taste-trail-web.web.app/"
-          >
-            <h1 className="text-2xl font-semibold text-center text-sky-700">
-              Taste Trail
-            </h1>
-            <p>
-              This is a restaurant website.. Here an user can order a food item.
-              User can place order for the ordered food item or can delete a
-              food item from cart in the shop page. An admin can add, update and
-              delete a food item and user.
-            </p>
-          </a>
-          <a
-            className="py-5 space-y-5 border-2 border-solid rounded-md hover:border-sky-700 md:p-5 lg:p-7 bg-base-200 transition duration-300 transform hover:scale-105"
-            href="https://travel-beyond-web.web.app/"
-          >
-            <h1 className="text-2xl font-semibold text-center text-sky-700">
-              Travel Beyond
-            </h1>
-            <p>
-              This is travel website.. Here an user can book or delete a tour
-              package. An admin can add, update and delete a tour package and
-              delete and update user.
-            </p>
-          </a>
-          <a
-            className="py-5 space-y-5 border-2 border-solid rounded-md hover:border-sky-700 md:p-5 lg:p-7 bg-base-200 transition duration-300 transform hover:scale-105"
-            href="https://swiftscan-diagnostics.web.app"
-          >
-            <h1 className="text-2xl font-semibold text-center text-sky-700">
-              Swiftscan Diagnostics
-            </h1>
-            <p>
-              This is medical diagnostic website. Here an user can book or
-              delete a test. An admin can add, update and delete a test. Admin
-              can also delete an user.
-            </p>
-          </a>
+        <h1 className="text-4xl font-bold mb-6 text-center">Featured Projects</h1>
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="relative overflow-hidden rounded-md bg-base-200 transition duration-300 transform hover:scale-105 shadow-md"
+              data-aos="fade-up"
+            >
+              <img
+                src={project.image}
+                alt={project.title}
+                className="rounded-t-md h-64 w-full object-cover transition-transform duration-300 transform hover:scale-105"
+              />
+              <div className="absolute inset-0 flex py-5 flex-col items-center justify-center text-white bg-gradient-to-b from-transparent to-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <h1 className="text-2xl font-bold mt-20">{project.title}</h1>
+                <p className="mt-2 text-sm px-8">{project.description}</p>
+                <div className="flex justify-center items-center mt-2 space-x-4 mb-5">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="px-5 py-2 text-white font-extrabold rounded-md transition duration-300 hover:text-slate-400">
+                    Visit
+                  </a>
+                  <a href={project.githubClient} target="_blank" rel="noopener noreferrer" className="px-5 py-2 text-white font-extrabold rounded-md transition duration-300 hover:text-slate-400">
+                    Client Code
+                  </a>
+                  <a href={project.githubServer} target="_blank" rel="noopener noreferrer" className="px-5 py-2 text-white font-extrabold rounded-md transition duration-300 hover:text-slate-400">
+                    Server Code
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

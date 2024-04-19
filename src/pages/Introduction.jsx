@@ -3,7 +3,7 @@ import { IoIosHome } from "react-icons/io";
 const Introduction = () => {
     return (
         <div>
-            <button className='flex items-center gap-2 px-4 py-2 mb-10 border-2 border-solid rounded-full cursor-pointer hover:text-white hover:bg-sky-700'>
+            <button className='flex items-center gap-2 px-4 py-2 mb-10 border-2 border-solid rounded-full cursor-pointer hover:text-white hover:bg-[#121A90]'>
                 <IoIosHome />
                 <h1 className='font-medium uppercase'>Introduction</h1>
             </button>
