@@ -31,7 +31,7 @@ const Contact = () => {
             </button>
             <div>
                 <h1 className="mb-10 text-4xl font-bold">Contact Me</h1>
-                <form ref={form} onSubmit={sendEmail} className="max-w-lg mx-auto">
+                <form ref={form} onSubmit={sendEmail} className="w-4/5 mx-auto">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                         <div data-aos="fade-up">
                             <div className="form-control">

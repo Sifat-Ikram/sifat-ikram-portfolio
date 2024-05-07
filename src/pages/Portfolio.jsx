@@ -4,21 +4,11 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 const Portfolio = () => {
-
   useEffect(() => {
     Aos.init({ duration: 2500 });
   }, []);
 
   const projects = [
-    {
-      title: "Career Hub",
-      image: "https://i.ibb.co/gz640Mc/career.png",
-      description:
-        "This is a job hunting website. Anyone can sign in and apply for a job or internship. There are three routes: Admin routes, Employer routes, Employee routes.",
-      link: "https://career-hub-web.web.app/",
-      githubClient: "https://github.com/Sifat-Ikram/career-hub-client",
-      githubServer: "https://github.com/Sifat-Ikram/career-hub-server",
-    },
     {
       title: "Taste Trail",
       image: "https://i.ibb.co/sKjTfQ1/taste.png",
@@ -36,6 +26,15 @@ const Portfolio = () => {
       link: "https://travel-beyond-web.web.app/",
       githubClient: "https://github.com/Sifat-Ikram/travel-beyond-client",
       githubServer: "https://github.com/Sifat-Ikram/travel-beyond-server",
+    },
+    {
+      title: "Career Hub",
+      image: "https://i.ibb.co/gz640Mc/career.png",
+      description:
+        "This is a job hunting website. Anyone can sign in and apply for a job or internship. There are three routes: Admin routes, Employer routes, Employee routes.",
+      link: "https://career-hub-web.web.app/",
+      githubClient: "https://github.com/Sifat-Ikram/career-hub-client",
+      githubServer: "https://github.com/Sifat-Ikram/career-hub-server",
     },
     {
       title: "Swiftscan Diagnostics",
@@ -57,12 +56,14 @@ const Portfolio = () => {
         <h1 className="font-medium uppercase">Projects</h1>
       </button>
       <div>
-        <h1 className="text-4xl font-bold mb-6 text-center">Featured Projects</h1>
+        <h1 className="text-4xl font-bold mb-6 text-center">
+          Featured Projects
+        </h1>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="relative overflow-hidden rounded-md bg-base-200 transition duration-300 transform hover:scale-105 shadow-md"
+              className="relative overflow-hidden rounded-md bg-base-200 transition duration-300 transform hover:scale-105 shadow border-2 border-solid cursor-pointer p-1"
               data-aos="fade-up"
             >
               <img
@@ -74,13 +75,28 @@ const Portfolio = () => {
                 <h1 className="text-2xl font-bold mt-20">{project.title}</h1>
                 <p className="mt-2 text-sm px-8">{project.description}</p>
                 <div className="flex justify-center items-center mt-2 space-x-4 mb-5">
-                  <a href={project.link} target="_blank" rel="noopener noreferrer" className="px-5 py-2 text-white font-extrabold rounded-md transition duration-300 hover:text-slate-400">
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-5 py-2 text-white font-extrabold rounded-md transition duration-300 hover:text-slate-400"
+                  >
                     Visit
                   </a>
-                  <a href={project.githubClient} target="_blank" rel="noopener noreferrer" className="px-5 py-2 text-white font-extrabold rounded-md transition duration-300 hover:text-slate-400">
+                  <a
+                    href={project.githubClient}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-5 py-2 text-white font-extrabold rounded-md transition duration-300 hover:text-slate-400"
+                  >
                     Client Code
                   </a>
-                  <a href={project.githubServer} target="_blank" rel="noopener noreferrer" className="px-5 py-2 text-white font-extrabold rounded-md transition duration-300 hover:text-slate-400">
+                  <a
+                    href={project.githubServer}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-5 py-2 text-white font-extrabold rounded-md transition duration-300 hover:text-slate-400"
+                  >
                     Server Code
                   </a>
                 </div>
