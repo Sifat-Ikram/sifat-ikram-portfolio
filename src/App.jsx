@@ -83,7 +83,7 @@ function App() {
           </div>
         </div>
         <div className="fixed right-5">
-          <button onClick={toggleDrawer} className="mt-40 text-[#041C93] hover:text-white hover:bg-[#041C93] bg-gray-200 btn border-[#041C93]"><GiHamburgerMenu></GiHamburgerMenu></button>
+          <button onClick={toggleDrawer} className="mt-40 text-[#041C93] hover:text-white hover:bg-[#041C93] bg-gray-200 btn border-[#041C93] hover:border-white"><GiHamburgerMenu></GiHamburgerMenu></button>
           <Drawer
             open={isOpen}
             onClose={toggleDrawer}
@@ -94,49 +94,49 @@ function App() {
             }}
           >
             <ul className="w-4/5 mx-auto mt-10 space-y-5">
-              <Link to="introduction" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#0830A5] tooltip-bottom btn  btn-outline rounded-full'
+              <Link to="introduction" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#041C93] border-[#041C93] hover:border-white tooltip-bottom btn  btn-outline rounded-full'
                 spy={true}
                 smooth={true}
                 offset={50}
                 duration={500} data-tip="Introduction">
                 <IoIosHome />
               </Link>
-              <Link to="about" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#0830A5] tooltip-bottom btn  btn-outline rounded-full'
+              <Link to="about" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#041C93] border-[#041C93] hover:border-white tooltip-bottom btn  btn-outline rounded-full'
                 spy={true}
                 smooth={true}
                 offset={50}
                 duration={500} data-tip="About">
                 <IoPerson />
               </Link>
-              <Link to="skills" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#0830A5] tooltip-bottom btn  btn-outline rounded-full'
+              <Link to="skills" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#041C93] border-[#041C93] hover:border-white tooltip-bottom btn  btn-outline rounded-full'
                 spy={true}
                 smooth={true}
                 offset={50}
                 duration={500} data-tip="Skills">
                 <FaTools />
               </Link>
-              <Link to="services" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#0830A5] tooltip-bottom btn  btn-outline rounded-full'
+              <Link to="services" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#041C93] border-[#041C93] hover:border-white tooltip-bottom btn  btn-outline rounded-full'
                 spy={true}
                 smooth={true}
                 offset={50}
                 duration={500} data-tip="Services">
                 <MdMiscellaneousServices />
               </Link>
-              <Link to="projects" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#0830A5] tooltip-bottom btn  btn-outline rounded-full'
+              <Link to="projects" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#041C93] border-[#041C93] hover:border-white tooltip-bottom btn  btn-outline rounded-full'
                 spy={true}
                 smooth={true}
                 offset={50}
                 duration={500} data-tip="Projects">
                 <FaFolderOpen />
               </Link>
-              <Link to={"education"} className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#0830A5] tooltip-bottom btn  btn-outline rounded-full'
+              <Link to={"education"} className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#041C93] border-[#041C93] hover:border-white tooltip-bottom btn  btn-outline rounded-full'
                 spy={true}
                 smooth={true}
                 offset={50}
                 duration={500} data-tip="Education">
                 <IoBook />
               </Link>
-              <Link to="contact" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#0830A5] tooltip-bottom btn  btn-outline rounded-full'
+              <Link to="contact" className='flex items-center gap-3 text-3xl px-4 tooltip hover:bg-[#041C93] border-[#041C93] hover:border-white tooltip-bottom btn  btn-outline rounded-full'
                 spy={true}
                 smooth={true}
                 offset={50}
