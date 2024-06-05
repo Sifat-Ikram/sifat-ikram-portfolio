@@ -34,7 +34,7 @@ function App() {
 
   return (
     <div className='md:flex'>
-      <div className='md:fixed md:w-1/4 lg:py-16 md:py-8 lg:px-10 md:px-2 bg-[#121A90]'>
+      <div className='md:fixed md:w-1/4 lg:py-16 md:py-8 lg:px-10 md:px-2 bg-[#041C93]'>
         <div className="flex flex-col items-center mb-5">
           <h1 className='block mb-3 text-3xl font-semibold text-center text-white uppercase lg:font-bold'
           >MD. SIFAT IKRAM</h1>
@@ -83,7 +83,7 @@ function App() {
           </div>
         </div>
         <div className="fixed right-5">
-          <button onClick={toggleDrawer} className="mt-40 text-gray-900 bg-gray-200 btn"><GiHamburgerMenu></GiHamburgerMenu></button>
+          <button onClick={toggleDrawer} className="mt-40 text-[#041C93] hover:text-white hover:bg-[#041C93] bg-gray-200 btn border-[#041C93]"><GiHamburgerMenu></GiHamburgerMenu></button>
           <Drawer
             open={isOpen}
             onClose={toggleDrawer}

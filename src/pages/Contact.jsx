@@ -25,7 +25,7 @@ const Contact = () => {
 
     return (
         <div className="container mx-auto py-12 px-4">
-            <button className="flex items-center gap-2 px-4 py-2 mb-10 border-2 border-solid rounded-full cursor-pointer hover:text-white hover:bg-[#121A90]">
+            <button className="flex items-center gap-2 px-4 py-2 mb-10 border-2 border-solid rounded-full cursor-pointer hover:text-white hover:bg-[#041C93]">
                 <IoMailOpenSharp />
                 <h1 className="font-medium uppercase">Contact</h1>
             </button>
@@ -60,7 +60,7 @@ const Contact = () => {
                     </div>
                     <div data-aos="flip-up">
                         <div className="mt-6 form-control">
-                            <button type='submit' className="btn bg-[#121A90] text-white font-semibold hover:bg-[#0E164C]">Send</button>
+                            <button type='submit' className="btn bg-[#041C93] text-white font-semibold hover:bg-[#0E164C]">Send</button>
                         </div>
                     </div>
                 </form>
