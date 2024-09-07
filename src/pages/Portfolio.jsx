@@ -10,6 +10,15 @@ const Portfolio = () => {
 
   const projects = [
     {
+      title: "Shop Sphere",
+      image: "https://i.ibb.co.com/9nHs3FX/shop.png",
+      description:
+        "This is a ecommerce website. Any user can sign up and buy products from product page, can see the cart page, can use discount and make payment through Bkash. An admin can see, edit and delete any product or user. Admin can also make a user admin.",
+      link: "https://shop-sphere-client-zeta.vercel.app",
+      githubClient: "https://github.com/Sifat-Ikram/shop-sphere-client",
+      githubServer: "https://github.com/Sifat-Ikram/shop-sphere-server",
+    },
+    {
       title: "Taste Trail",
       image: "https://i.ibb.co/sKjTfQ1/taste.png",
       description:
@@ -17,15 +26,6 @@ const Portfolio = () => {
       link: "https://taste-trail-web.web.app/",
       githubClient: "https://github.com/Sifat-Ikram/taste-trail-client",
       githubServer: "https://github.com/Sifat-Ikram/taste-trail-server",
-    },
-    {
-      title: "Travel Beyond",
-      image: "https://i.ibb.co/HDL7dFC/travel.png",
-      description:
-        "This is a travel website. Here a user can book or delete a tour package. An admin can add, update, and delete a tour package and delete and update a user.",
-      link: "https://travel-beyond-web.web.app/",
-      githubClient: "https://github.com/Sifat-Ikram/travel-beyond-client",
-      githubServer: "https://github.com/Sifat-Ikram/travel-beyond-server",
     },
     {
       title: "Career Hub",
@@ -37,15 +37,13 @@ const Portfolio = () => {
       githubServer: "https://github.com/Sifat-Ikram/career-hub-server",
     },
     {
-      title: "Swiftscan Diagnostics",
-      image: "https://i.ibb.co/gdZc0VG/swift.png",
+      title: "Travel Beyond",
+      image: "https://i.ibb.co/HDL7dFC/travel.png",
       description:
-        "This is a medical diagnostic website. Here a user can book or delete a test. An admin can add, update, and delete a test. Admin can also delete a user.",
-      link: "https://swiftscan-diagnostics.web.app",
-      githubClient:
-        "https://github.com/Sifat-Ikram/swiftscan-diagnostics-client",
-      githubServer:
-        "https://github.com/Sifat-Ikram/swiftscan-diagnostics-server",
+        "This is a travel website. Here a user can book or delete a tour package. An admin can add, update, and delete a tour package and delete and update a user.",
+      link: "https://travel-beyond-web.web.app/",
+      githubClient: "https://github.com/Sifat-Ikram/travel-beyond-client",
+      githubServer: "https://github.com/Sifat-Ikram/travel-beyond-server",
     },
   ];
 

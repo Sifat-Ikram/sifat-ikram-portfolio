@@ -9,15 +9,23 @@ const About = () => {
       </button>
       <div>
         <h1 className="mb-8 text-3xl font-semibold">
-          Every great design begin with an even better story
+          Every great design begins with an even better story
         </h1>
-        <h2 className="mb-5 text-2xl">
+        <h2 className="text-2xl">
           I am a passionate and motivated web developer with a keen interest in
           creating dynamic and user-friendly websites. My journey into the world
           of web development started with a fascination for turning ideas into
           interactive and visually appealing digital experiences.
         </h2>
       </div>
+      <a
+        href="https://drive.google.com/file/d/1ONvcsFzvND1lzS1bbp-t8ZGfsqGoDL8Y/view?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="inline-block px-6 py-3 mt-10 text-xl font-semibold rounded-md text-white bg-[#041C93]"
+      >
+        Download Resume
+      </a>
     </div>
   );
 };
