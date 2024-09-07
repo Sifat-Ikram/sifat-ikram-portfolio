@@ -2,8 +2,19 @@ import { useEffect } from "react";
 import { FaTools } from "react-icons/fa";
 import { RiReactjsLine } from "react-icons/ri";
 import { IoLogoNodejs } from "react-icons/io5";
-import { TbBrandJavascript, TbBrandTailwind, TbBrandNextjs } from "react-icons/tb";
-import { SiFirebase, SiExpress, SiMongodb, SiVuedotjs, SiCodeclimate, SiRedux } from "react-icons/si";
+import {
+  TbBrandJavascript,
+  TbBrandTailwind,
+  TbBrandNextjs,
+} from "react-icons/tb";
+import {
+  SiFirebase,
+  SiExpress,
+  SiMongodb,
+  SiVuedotjs,
+  SiCodeclimate,
+  SiRedux,
+} from "react-icons/si";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -36,6 +47,16 @@ const Skills = () => {
               </div>
             </div>
             <h1 className="text-3xl font-semibold">Tailwind CSS</h1>
+          </div>
+        </div>
+        <div data-aos="fade-down">
+          <div className="flex flex-col items-center">
+            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#041C93]">
+              <div className="text-3xl font-bold">
+                <TbBrandNextjs />
+              </div>
+            </div>
+            <h1 className="text-3xl font-semibold">Next Js</h1>
           </div>
         </div>
         <div data-aos="fade-up">
@@ -86,16 +107,6 @@ const Skills = () => {
               </div>
             </div>
             <h1 className="text-3xl font-semibold">MongoDb</h1>
-          </div>
-        </div>
-        <div data-aos="fade-down">
-          <div className="flex flex-col items-center">
-            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#041C93]">
-              <div className="text-3xl font-bold">
-                <TbBrandNextjs />
-              </div>
-            </div>
-            <h1 className="text-3xl font-semibold">Next Js</h1>
           </div>
         </div>
         <div data-aos="fade-up">

@@ -31,7 +31,7 @@ const Services = () => {
               Front-end Development
             </h1>
             <p className="text-lg text-gray-700">
-              Utilizing cutting-edge technologies like ReactJS, Tailwind CSS,
+              Utilizing cutting-edge technologies like NextJs, ReactJS, Redux, Tailwind CSS,
               and Material UI to build seamless and responsive user interfaces.
             </p>
           </div>
@@ -43,7 +43,7 @@ const Services = () => {
             </h1>
             <p className="text-lg text-gray-700">
               Expertise in back-end technologies such as Node.js, Express.js,
-              JWT, and MongoDB to develop robust and scalable server-side
+              JWT, MongoDB and MySQL to develop robust and scalable server-side
               solutions.
             </p>
           </div>
