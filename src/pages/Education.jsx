@@ -10,8 +10,8 @@ const Education = () => {
     }, []);
 
     return (
-        <div>
-            <button className='flex items-center gap-2 px-4 py-2 mb-10 border-2 border-solid rounded-full cursor-pointer hover:text-white hover:bg-[#041C93]'>
+        <div className="space-y-8">
+            <button className='flex items-center gap-2 px-4 py-2 mb-5 border-2 border-solid rounded-full cursor-pointer hover:text-white hover:bg-[#041C93]'>
                 <IoBook />
                 <h1 className='font-medium uppercase'>Education</h1>
             </button>
@@ -20,6 +20,13 @@ const Education = () => {
                     <h1 className='text-2xl font-semibold'>Shahjalal University of Science and Technology, Sylhet</h1>
                     <h1 className='text-lg font-medium'>Physics</h1>
                     <p>2015-2023</p>
+                </div>
+            </div>
+            <div data-aos="flip-up">
+                <div className='px-3 py-3 space-y-5 border-2 rounded-lg bg-base-200 hover:border-[#041C93]'>
+                    <h1 className='text-2xl font-semibold'>Programming Hero</h1>
+                    <h1 className='text-lg font-medium'>MERN Stack Development</h1>
+                    <p>Year 2023</p>
                 </div>
             </div>
         </div>
