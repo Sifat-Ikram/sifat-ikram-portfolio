@@ -28,7 +28,7 @@ const Skills = () => {
         <FaTools />
         <h1 className="font-medium uppercase">My Skills</h1>
       </button>
-      <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 gap-5 md:grid-cols-4">
         <div data-aos="fade-right">
           <div className="flex flex-col items-center">
             <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#041C93]">
@@ -36,17 +36,7 @@ const Skills = () => {
                 <TbBrandJavascript />
               </div>
             </div>
-            <h1 className="text-3xl font-semibold">JavaScript</h1>
-          </div>
-        </div>
-        <div data-aos="fade-down">
-          <div className="flex flex-col items-center">
-            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#041C93]">
-              <div className="text-3xl font-bold">
-                <TbBrandTailwind />
-              </div>
-            </div>
-            <h1 className="text-3xl font-semibold">Tailwind CSS</h1>
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold">JavaScript</h1>
           </div>
         </div>
         <div data-aos="fade-down">
@@ -56,7 +46,7 @@ const Skills = () => {
                 <TbBrandNextjs />
               </div>
             </div>
-            <h1 className="text-3xl font-semibold">Next Js</h1>
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold">Next Js</h1>
           </div>
         </div>
         <div data-aos="fade-up">
@@ -66,27 +56,27 @@ const Skills = () => {
                 <RiReactjsLine />
               </div>
             </div>
-            <h1 className="text-3xl font-semibold">React Js</h1>
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold">React Js</h1>
           </div>
         </div>
-        <div data-aos="fade-down">
+        <div data-aos="fade-left">
           <div className="flex flex-col items-center">
             <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#041C93]">
               <div className="text-3xl font-bold">
                 <SiVuedotjs />
               </div>
             </div>
-            <h1 className="text-3xl font-semibold">Vue Js</h1>
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold">Vue Js</h1>
           </div>
         </div>
-        <div data-aos="fade-up">
+        <div data-aos="fade-right">
           <div className="flex flex-col items-center">
             <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#041C93]">
               <div className="text-3xl font-bold">
                 <IoLogoNodejs />
               </div>
             </div>
-            <h1 className="text-3xl font-semibold">Node Js</h1>
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold">Node Js</h1>
           </div>
         </div>
         <div data-aos="fade-down">
@@ -96,7 +86,7 @@ const Skills = () => {
                 <SiExpress />
               </div>
             </div>
-            <h1 className="text-3xl font-semibold">Express Js</h1>
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold">Express Js</h1>
           </div>
         </div>
         <div data-aos="fade-up">
@@ -106,17 +96,27 @@ const Skills = () => {
                 <SiMongodb />
               </div>
             </div>
-            <h1 className="text-3xl font-semibold">MongoDb</h1>
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold">MongoDb</h1>
           </div>
         </div>
-        <div data-aos="fade-up">
+        <div data-aos="fade-left">
           <div className="flex flex-col items-center">
             <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#041C93]">
               <div className="text-3xl font-bold">
                 <SiFirebase />
               </div>
             </div>
-            <h1 className="text-3xl font-semibold">Firebase</h1>
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold">Firebase</h1>
+          </div>
+        </div>
+        <div data-aos="fade-right">
+          <div className="flex flex-col items-center">
+            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#041C93]">
+              <div className="text-3xl font-bold">
+                <TbBrandTailwind />
+              </div>
+            </div>
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold">Tailwind CSS</h1>
           </div>
         </div>
         <div data-aos="fade-down">
@@ -126,7 +126,7 @@ const Skills = () => {
                 <SiCodeclimate />
               </div>
             </div>
-            <h1 className="text-3xl font-semibold">Material Ui</h1>
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold">Material Ui</h1>
           </div>
         </div>
         <div data-aos="fade-up">
@@ -136,7 +136,7 @@ const Skills = () => {
                 <SiRedux />
               </div>
             </div>
-            <h1 className="text-3xl font-semibold">Redux</h1>
+            <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold">Redux</h1>
           </div>
         </div>
       </div>

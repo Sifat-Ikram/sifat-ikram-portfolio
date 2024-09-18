@@ -60,9 +60,9 @@ const Portfolio = () => {
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
           {projects.map((project, index) => (
             <div
+              data-aos="fade-down"
               key={index}
               className="relative overflow-hidden rounded-md bg-base-200 transition duration-300 transform hover:scale-105 shadow border-2 border-solid cursor-pointer p-1"
-              data-aos="fade-up"
             >
               <img
                 src={project.image}

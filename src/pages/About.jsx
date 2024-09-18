@@ -19,7 +19,7 @@ const About = () => {
         </h2>
       </div>
       <a
-        href="https://drive.google.com/file/d/1ONvcsFzvND1lzS1bbp-t8ZGfsqGoDL8Y/view?usp=sharing"
+        href="https://drive.google.com/file/d/11U9YBTiwRbHZuFudQFv4JjcgfwOmKqJV/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-block px-6 py-3 mt-10 text-xl font-semibold rounded-md text-white bg-[#041C93]"
