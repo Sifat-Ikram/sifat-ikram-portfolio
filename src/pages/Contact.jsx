@@ -1,72 +1,122 @@
 import { IoMailOpenSharp } from "react-icons/io5";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 import { useEffect, useRef } from "react";
 import Aos from "aos";
+import { useForm } from "react-hook-form";
 import "aos/dist/aos.css";
 
 const Contact = () => {
-    const form = useRef();
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm();
 
-    useEffect(() => {
-        Aos.init({ duration: 1500 });
-    }, []);
+  const formRef = useRef();
 
-    const sendEmail = (e) => {
-        e.preventDefault();
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
 
-        emailjs.sendForm('service_domwr0l', 'template_gnnl8ol', form.current, 'C6gWlqr-Sf1AbAQUH')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-        e.target.reset();
-    };
+  const sendEmail = () => {
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        formRef.current,
+        import.meta.env.VITE_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
-    return (
-        <div className="container mx-auto py-12 px-4">
-            <button className="flex items-center gap-2 px-4 py-2 mb-10 border-2 border-solid rounded-full cursor-pointer hover:text-white hover:bg-[#041C93]">
-                <IoMailOpenSharp />
-                <h1 className="font-medium uppercase">Contact</h1>
-            </button>
-            <div>
-                <h1 className="mb-10 text-4xl font-bold">Contact Me</h1>
-                <form ref={form} onSubmit={sendEmail} className="w-4/5 mx-auto">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                        <div data-aos="fade-up">
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">Your full Name</span>
-                                </label>
-                                <input type="text" name='name' placeholder="Full Name" className="input input-bordered" required />
-                            </div>
-                        </div>
-                        <div data-aos="fade-up">
-                            <div className="form-control">
-                                <label className="label">
-                                    <span className="label-text">Email</span>
-                                </label>
-                                <input type="email" name='email' placeholder="Email" className="input input-bordered" required />
-                            </div>
-                        </div>
-                    </div>
-                    <div data-aos="fade-up">
-                        <div className="form-control">
-                            <label className="label">
-                                <span className="label-text">Message</span>
-                            </label>
-                            <textarea className="textarea input-bordered" name='message' placeholder="Type your message here..."></textarea>
-                        </div>
-                    </div>
-                    <div data-aos="flip-up">
-                        <div className="mt-6 form-control">
-                            <button type='submit' className="btn bg-[#041C93] text-white font-semibold hover:bg-[#0E164C]">Send</button>
-                        </div>
-                    </div>
-                </form>
+  return (
+    <div className="container mx-auto py-12 px-4">
+      <button className="flex items-center gap-2 px-4 py-2 mb-10 border-2 border-solid rounded-full cursor-pointer hover:text-white hover:bg-[#041C93]">
+        <IoMailOpenSharp />
+        <h1 className="font-medium uppercase">Contact</h1>
+      </button>
+      <div>
+        <h1 className="mb-10 text-4xl font-bold">Contact Me</h1>
+        <form
+          ref={formRef}
+          onSubmit={handleSubmit(sendEmail)}
+          className="w-4/5 mx-auto"
+        >
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div data-aos="fade-up">
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Your full Name</span>
+                </label>
+                <input
+                  type="text"
+                  name="Full_Name"
+                  placeholder="Full Name"
+                  {...register("name", { required: "Full Name is required" })}
+                  className="input input-bordered"
+                />
+                {errors.name && (
+                  <span className="text-red-500">{errors.name.message}</span>
+                )}
+              </div>
             </div>
-        </div>
-    );
+            <div data-aos="fade-up">
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Email</span>
+                </label>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  name="email"
+                  {...register("email", { required: "Email is required" })}
+                  className="input input-bordered"
+                />
+                {errors.email && (
+                  <span className="text-red-500">{errors.email.message}</span>
+                )}
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-up">
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text">Message</span>
+              </label>
+              <textarea
+                className="textarea input-bordered"
+                name="Message"
+                placeholder="Type your message here..."
+                {...register("message", { required: "Message is required" })}
+              ></textarea>
+              {errors.message && (
+                <span className="text-red-500">{errors.message.message}</span>
+              )}
+            </div>
+          </div>
+          <div data-aos="flip-up">
+            <div className="mt-6 form-control">
+              <button
+                type="submit"
+                className="btn bg-[#041C93] text-white font-semibold hover:bg-[#0E164C]"
+              >
+                Send
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  );
 };
 
 export default Contact;
