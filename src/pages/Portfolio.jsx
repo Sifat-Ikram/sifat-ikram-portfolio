@@ -49,7 +49,7 @@ const Portfolio = () => {
 
   return (
     <div className="container mx-auto px-4">
-      <button className="flex items-center gap-2 px-4 py-2 mb-10 border-2 border-solid rounded-full cursor-pointer hover:text-white hover:bg-[#041C93]">
+      <button className="flex items-center dark:border-[2px] border-solid border-white dark:hover:bg-white dark:hover:text-dark dark:bg-dark dark:text-white gap-2 px-4 py-2 mb-10 shadow bg-base-300 rounded-full cursor-pointer hover:text-white hover:bg-[#041C93]">
         <FaFolderOpen />
         <h1 className="font-medium uppercase">Projects</h1>
       </button>

@@ -24,14 +24,14 @@ const Skills = () => {
   }, []);
   return (
     <div>
-      <button className="flex items-center gap-2 px-4 py-2 mb-10 border-2 border-solid rounded-full cursor-pointer hover:text-white hover:bg-[#041C93]">
+      <button className="flex items-center gap-2 dark:border-[2px] border-solid border-white dark:hover:bg-white dark:hover:text-dark dark:bg-dark dark:text-white px-4 py-2 mb-10 shadow bg-base-300 rounded-full cursor-pointer hover:text-white hover:bg-[#041C93]">
         <FaTools />
         <h1 className="font-medium uppercase">My Skills</h1>
       </button>
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-5 md:grid-cols-4">
         <div data-aos="fade-right">
           <div className="flex flex-col items-center">
-            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#041C93]">
+            <div className="p-10 shadow bg-base-300 dark:bg-dark dark:border-[2px] dark:hover:bg-white dark:hover:text-dark border-solid border-white rounded-full cursor-pointer hover:bg-base-200">
               <div className="text-3xl font-bold">
                 <TbBrandJavascript />
               </div>
@@ -41,7 +41,7 @@ const Skills = () => {
         </div>
         <div data-aos="fade-down">
           <div className="flex flex-col items-center">
-            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#041C93]">
+            <div className="p-10 shadow bg-base-300 dark:bg-dark dark:border-[2px] dark:hover:bg-white dark:hover:text-dark border-solid border-white rounded-full cursor-pointer hover:bg-base-200">
               <div className="text-3xl font-bold">
                 <TbBrandNextjs />
               </div>
@@ -51,7 +51,7 @@ const Skills = () => {
         </div>
         <div data-aos="fade-up">
           <div className="flex flex-col items-center">
-            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#041C93]">
+            <div className="p-10 shadow bg-base-300 dark:bg-dark dark:border-[2px] dark:hover:bg-white dark:hover:text-dark border-solid border-white rounded-full cursor-pointer hover:bg-base-200">
               <div className="text-3xl font-bold">
                 <RiReactjsLine />
               </div>
@@ -61,7 +61,7 @@ const Skills = () => {
         </div>
         <div data-aos="fade-left">
           <div className="flex flex-col items-center">
-            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#041C93]">
+            <div className="p-10 shadow bg-base-300 dark:bg-dark dark:border-[2px] dark:hover:bg-white dark:hover:text-dark border-solid border-white rounded-full cursor-pointer hover:bg-base-200">
               <div className="text-3xl font-bold">
                 <SiVuedotjs />
               </div>
@@ -71,7 +71,7 @@ const Skills = () => {
         </div>
         <div data-aos="fade-right">
           <div className="flex flex-col items-center">
-            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#041C93]">
+            <div className="p-10 shadow bg-base-300 dark:bg-dark dark:border-[2px] dark:hover:bg-white dark:hover:text-dark border-solid border-white rounded-full cursor-pointer hover:bg-base-200">
               <div className="text-3xl font-bold">
                 <IoLogoNodejs />
               </div>
@@ -81,7 +81,7 @@ const Skills = () => {
         </div>
         <div data-aos="fade-down">
           <div className="flex flex-col items-center">
-            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#041C93]">
+            <div className="p-10 shadow bg-base-300 dark:bg-dark dark:border-[2px] dark:hover:bg-white dark:hover:text-dark border-solid border-white rounded-full cursor-pointer hover:bg-base-200">
               <div className="text-3xl font-bold">
                 <SiExpress />
               </div>
@@ -91,7 +91,7 @@ const Skills = () => {
         </div>
         <div data-aos="fade-up">
           <div className="flex flex-col items-center">
-            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#041C93]">
+            <div className="p-10 shadow bg-base-300 dark:bg-dark dark:border-[2px] dark:hover:bg-white dark:hover:text-dark border-solid border-white rounded-full cursor-pointer hover:bg-base-200">
               <div className="text-3xl font-bold">
                 <SiMongodb />
               </div>
@@ -101,7 +101,7 @@ const Skills = () => {
         </div>
         <div data-aos="fade-left">
           <div className="flex flex-col items-center">
-            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#041C93]">
+            <div className="p-10 shadow bg-base-300 dark:bg-dark dark:border-[2px] dark:hover:bg-white dark:hover:text-dark border-solid border-white rounded-full cursor-pointer hover:bg-base-200">
               <div className="text-3xl font-bold">
                 <SiFirebase />
               </div>
@@ -111,7 +111,7 @@ const Skills = () => {
         </div>
         <div data-aos="fade-right">
           <div className="flex flex-col items-center">
-            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#041C93]">
+            <div className="p-10 shadow bg-base-300 dark:bg-dark dark:border-[2px] dark:hover:bg-white dark:hover:text-dark border-solid border-white rounded-full cursor-pointer hover:bg-base-200">
               <div className="text-3xl font-bold">
                 <TbBrandTailwind />
               </div>
@@ -121,7 +121,7 @@ const Skills = () => {
         </div>
         <div data-aos="fade-down">
           <div className="flex flex-col items-center">
-            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#041C93]">
+            <div className="p-10 shadow bg-base-300 dark:bg-dark dark:border-[2px] dark:hover:bg-white dark:hover:text-dark border-solid border-white rounded-full cursor-pointer hover:bg-base-200">
               <div className="text-3xl font-bold">
                 <SiCodeclimate />
               </div>
@@ -131,7 +131,7 @@ const Skills = () => {
         </div>
         <div data-aos="fade-up">
           <div className="flex flex-col items-center">
-            <div className="p-10 border-2 border-solid rounded-full cursor-pointer hover:border-[#041C93]">
+            <div className="p-10 shadow bg-base-300 dark:bg-dark dark:border-[2px] dark:hover:bg-white dark:hover:text-dark border-solid border-white rounded-full cursor-pointer hover:bg-base-200">
               <div className="text-3xl font-bold">
                 <SiRedux />
               </div>

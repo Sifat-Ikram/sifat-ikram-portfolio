@@ -40,7 +40,7 @@ const Contact = () => {
 
   return (
     <div className="container mx-auto py-12 px-4">
-      <button className="flex items-center gap-2 px-4 py-2 mb-10 border-2 border-solid rounded-full cursor-pointer hover:text-white hover:bg-[#041C93]">
+      <button className="flex items-center gap-2 px-4 py-2 mb-10 shadow dark:border-[2px] border-solid border-white dark:bg-dark dark:hover:bg-white dark:hover:text-dark dark:text-white bg-base-300 rounded-full cursor-pointer hover:text-white hover:bg-[#041C93]">
         <IoMailOpenSharp />
         <h1 className="font-medium uppercase">Contact</h1>
       </button>
@@ -65,7 +65,7 @@ const Contact = () => {
                   className="input input-bordered"
                 />
                 {errors.name && (
-                  <span className="text-red-500">{errors.name.message}</span>
+                  <span className="text-red-500 dark:text-white">{errors.name.message}</span>
                 )}
               </div>
             </div>
@@ -82,7 +82,7 @@ const Contact = () => {
                   className="input input-bordered"
                 />
                 {errors.email && (
-                  <span className="text-red-500">{errors.email.message}</span>
+                  <span className="text-red-500 dark:text-white">{errors.email.message}</span>
                 )}
               </div>
             </div>
@@ -99,7 +99,7 @@ const Contact = () => {
                 {...register("message", { required: "Message is required" })}
               ></textarea>
               {errors.message && (
-                <span className="text-red-500">{errors.message.message}</span>
+                <span className="text-red-500 dark:text-white">{errors.message.message}</span>
               )}
             </div>
           </div>
@@ -107,7 +107,7 @@ const Contact = () => {
             <div className="mt-6 form-control">
               <button
                 type="submit"
-                className="btn bg-[#041C93] text-white font-semibold hover:bg-[#0E164C]"
+                className="btn bg-[#233bb1] text-white dark:bg-dark dark:border-[2px] border-white border-solid font-semibold hover:bg-[#041C93]"
               >
                 Send
               </button>
