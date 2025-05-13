@@ -12,7 +12,7 @@ const Introduction = () => {
           <span className="mb-5 text-3xl font-semibold lg:text-5xl">
             Say Hello from
             <span className="font-bold uppercase"> Md. Sifat Ikram, </span>
-            MERN Stack developer
+            Full Stack developer
           </span>
         </h1>
       </div>

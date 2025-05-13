@@ -15,10 +15,10 @@ const Experience = () => {
       </button>
       <div data-aos="flip-up">
         <div className="px-3 py-3 shadow space-y-3 rounded-lg bg-base-200 dark:bg-dark dark:border-[2px] border-solid border-white hover:border-[#233bb1]">
-          <h1 className="text-2xl font-semibold">RedTilt Solutions Ltd</h1>
-          <h1 className="text-xl font-semibold">MERN Stack developer</h1>
+          <h1 className="text-2xl font-semibold">Lofistack</h1>
+          <h1 className="text-xl font-semibold">Frontend developer</h1>
           <h1 className="text-base font-medium">
-            1st December, 2024 - present
+            1st November, 2024 - present
           </h1>
         </div>
       </div>

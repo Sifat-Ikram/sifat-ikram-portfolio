@@ -1,4 +1,4 @@
-import photo from "../assets/for_cv.jpg"
+import photo from "../assets/for_cv.jpg";
 import { ImFacebook2 } from "react-icons/im";
 import { FaLinkedin } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
@@ -11,7 +11,7 @@ const Sidebar = () => {
           MD. SIFAT IKRAM
         </h1>
         <h1 className="mb-10 text-xl font-semibold text-center text-white">
-          MERN Stack Developer
+          Full Stack Developer
         </h1>
         <img src={photo} className="w-4/5 rounded-xl" alt="" />
       </div>
